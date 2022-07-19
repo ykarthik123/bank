@@ -1,0 +1,218 @@
+<html>
+    <title>
+        login_data
+    </title>
+<div class="bg">
+    <div class = "name1">
+        <head>
+            login data 
+        </head>
+    </div>
+    <body>
+        <div class="hey">
+            Hey! How is the day today ...
+        </div>
+        <div class="wel">
+            Welcome Sir
+            <button class="add">
+                Add money
+            </button>
+            <button><a class="add1" href = "login.html">
+                logout
+            </a>
+            </button>
+        </div>
+
+
+        <button class="sendmoney" onclick="my123()">
+            Send Money
+        </button>
+        <div id="sendmoney123" class="table1" border="1" hidden>
+        <tr><b></b>
+            <th>Name :</th>
+                <th><input type = "text" placeholder = "Name" name = "name" width = 150px required></th></br>
+            <th>Money :</th>
+                <th><input type="balance" placeholder = "balance" name="money" required></th><br>
+            <th>Password :</th>
+                <th><input type = "password" placeholder = "password" name= "password" required></th><br>
+            <th>Email :</th>
+                <th><input type="email" placeholder = "email" name="email" required></th><br>
+            <th><button class="submit1">submit</button></th>
+        </tr>
+        </div>
+
+
+        <button class="trans" onclick="myFun()">
+            See All Transactions
+        </button>
+    <table id="tabl"  border="1" hidden>
+        <tr>
+            <th>SI.No</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Bank Balance in (rps)</th>
+            <th>Transfer_Date</th>
+        </tr>
+         <tr>
+             <td>1.</td>
+             <td>Karthik</td>
+             <td>Karthiky638@gmail.com</td>
+             <td>545.0</td>
+             <td>01-04-2022</td>
+         </tr>
+         <tr>
+            <td>2.</td>
+            <td>raju</td>
+            <td>raju@gmail.com</td>
+            <td>754.0</td>
+            <td>10-04-2022</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Ramcharan</td>
+            <td>Ram@gmail.com</td>
+            <td>190.0</td>
+            <td>21-04-2022</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>mouli</td>
+            <td>mouli@gmail.com</td>
+            <td>964.0</td>
+            <td>11-05-2022</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>Bhargav</td>
+            <td>Bhargav@gmail.com</td>
+            <td>290.0</td>
+            <td>17-05-2022</td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>Abhi</td>
+            <td>abhi@gmail.com</td>
+            <td>250.0</td>
+            <td>9-06-2022</td>
+        </tr>
+    </table>
+</button>
+</div>
+</body>
+
+
+
+<script>
+    function myFun() {
+        var x = document.getElementById("tabl");
+      if(x.style.display == "none"){
+        x.style.display = "block";
+      }
+      else{
+        x.style.display = "none";
+      }
+    }
+    function my123() {
+        var y = document.getElementById("sendmoney123");
+      if(y.style.display == "none"){
+        y.style.display = "block";
+      }
+      else{
+        y.style.display = "none";
+      }
+    }
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+<style>
+    .table1{
+        margin-top: 50px;
+        margin-left: 200px;
+        border-collapse: collapse;
+        width: 800px;
+        color: black;
+        font-size: 25px;
+        text-align: left;
+        background-color:lightpink;
+        width: 300px;
+    }
+    table{
+        margin-top: 50px;
+        margin-left: 200px;
+        border-collapse: collapse;
+        width: 800px;
+        color: black;
+        font-size: 25px;
+        text-align: left;
+    }
+    th{
+        background-color: yellow;
+        color: red;
+    }
+    tr1{
+        font-size: 30px;
+        margin-left:500px;
+    }
+    .submit1{
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    .hey{
+        margin-top: 40px;
+        color: rgb(84, 239, 49);
+        margin-left: 50px;
+        font-size: 50px;
+    }
+    .sendmoney{
+        margin-top: 20px;
+        margin-left: 80px;
+        font-size: 30px;
+    }
+    .tabl{
+        margin-top: 20px;
+    }
+    .trans{
+        margin-left: 450px;
+        margin-top: 50px;
+        font-size: 30px;
+    }
+    .add{
+        margin-left: 700px;
+        font-size: 30px;
+        color: red;
+    }
+    .add1{
+        font-size: 30px;
+        color: red;
+    }
+    .bg{
+        background-color: bisque;
+        height: 900px;
+    }
+    .name1
+    {
+        background-color: yellow;
+        width: 120px;
+        margin-left: 500px;
+        color:blueviolet;
+        font-size: 30px;
+    }
+    .wel{
+        margin-top: 20px;
+        background-color: black;
+        margin-left: 30px;
+        height: 50px;
+        font-size: 40px;
+        width: 1200px;
+        color: white;
+        }
+
+</style>
